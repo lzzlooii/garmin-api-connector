@@ -55,7 +55,7 @@ JSON 数据直接返回，不做趋势计算、字段删减、日期截断、自
 
 ## 出处
 
-- 开发过程：由维护者设计与维护，Claude 协助编写初版，GPT 协助修改与安全加固。保留源码中的 MIT 版权与许可声明。
+- 开发过程：由维护者设计与维护，Claude Code 协助编写初版，Codex 协助修改与安全加固。保留源码中的 MIT 版权与许可声明。
 - 官方客户端：https://github.com/garmin/connect-personal-api-python ，Garmin Ltd. 或其子公司，Apache-2.0；通过依赖安装，未修改其源码。
 - MCP Python SDK：https://github.com/modelcontextprotocol/python-sdk ，许可证以依赖发行版为准。
 - 本次修改：移除账号模式，将 MCP 数据工具与官方 24 项方法一一对应，保留中国区切换和国内依赖镜像。
@@ -75,3 +75,11 @@ Garmin 个人 API 适用其个人使用条款。使用官方 API 不代表本项
 - 删除本地凭证不等于撤销 Garmin 密钥。停用时应去佳明设置撤销。
 
 附 SECURITY.md 和检查记录；本次检查不是独立渗透测试或绝对安全保证。
+
+## 开发与 AI 协助
+
+- 项目维护者：需求设计、测试与发布维护。
+- Claude Code（Anthropic）：协助编写初版。
+- Codex（OpenAI）：协助修改、接口对齐与安全加固。
+
+以上为开发工具致谢，不代表 Anthropic、OpenAI 或 Garmin 对项目的官方认可。
