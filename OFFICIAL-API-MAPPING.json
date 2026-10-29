@@ -1,0 +1,32 @@
+{
+  "official_repository": "https://github.com/garmin/connect-personal-api-python",
+  "checked_on": "2026-10-28",
+  "official_client_sha256": "87594c35a073448df1644262eeb34a945a668e76b3f50b8a340b2243f523585a",
+  "dedicated_data_methods": [
+    "get_daily_stress",
+    "get_daily_steps",
+    "get_daily_hydration",
+    "get_effective_weight_goals",
+    "get_weight_measurements",
+    "get_daily_food_logs",
+    "get_user_profile_settings",
+    "get_daily_sleep",
+    "get_daily_sleep_summaries",
+    "get_daily_body_battery",
+    "get_daily_summaries",
+    "get_daily_hrv",
+    "get_daily_hrv_summaries",
+    "get_heart_rate_zones",
+    "get_fitness_age",
+    "get_daily_heart_rate",
+    "get_menstrual_cycle_summary",
+    "get_menstrual_cycle_day_view",
+    "get_daily_spo2",
+    "get_wellness_activity_summaries",
+    "search_activities",
+    "get_activity",
+    "get_activity_workouts",
+    "download_activity"
+  ],
+  "scope": "Only named official data wrappers; no generic GET MCP tool, account login or calculated metrics."
+}

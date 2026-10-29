@@ -1,0 +1,20 @@
+# 在自己家的电脑 / NAS 上运行（最私密：数据不经过任何云服务器）
+#
+#   1. 复制 .env.example 为 .env，改掉里面的管理员密码
+#   2. docker compose up -d
+#   3. 浏览器打开 http://localhost:8000
+#
+# 手机上的 AI App 要从外网访问，还需要 Cloudflare Tunnel 之类的工具，见 docs/部署-家用电脑.md
+
+services:
+  garmin-mcp:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"   # 只监听本机，外网访问请走 Tunnel（自带 HTTPS）
+    env_file: .env
+    volumes:
+      - garmin-data:/data
+
+volumes:
+  garmin-data:

@@ -1,0 +1,18 @@
+# Render 一键部署配置（Blueprint）
+# 注意：持久化硬盘需要付费实例，免费实例重启后会丢失佳明凭证。以 Render 官网为准。
+services:
+  - type: web
+    name: garmin-mcp
+    runtime: docker
+    region: singapore        # 离中国、日本最近的区域
+    plan: 0.5c-512mb      # 最小付费实例；free 实例不支持挂载硬盘
+    healthCheckPath: /healthz
+    envVars:
+      - key: ADMIN_PASSWORD  # 部署时会让你填写
+        sync: false
+      - key: TZ
+        value: Asia/Shanghai
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1

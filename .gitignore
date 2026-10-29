@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+
+# 下面这些是账号钥匙，绝对不能提交到 GitHub
+.env
+.garmin-mcp*/
+.garminconnect*/
+tokens/
+config.json

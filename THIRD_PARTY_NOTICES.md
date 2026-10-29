@@ -1,0 +1,1 @@
+依赖与出处见 README。Garmin 官方 SDK：Garmin Ltd. 或其子公司，Apache-2.0，https://github.com/garmin/connect-personal-api-python 。MCP SDK：https://github.com/modelcontextprotocol/python-sdk ，MIT。tzdata 包：Python Software Foundation，Apache-2.0；时区数据还受其发行版所附声明约束。各依赖在安装时获取，其发行包所附许可证与声明应保留。原 v0.3.1 MIT LICENSE 原样保留。

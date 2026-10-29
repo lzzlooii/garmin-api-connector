@@ -1,0 +1,30 @@
+[project]
+name = "garmin-mcp"
+version = "0.1.0"
+description = "运动手表 AI 连接器：让 AI App 通过佳明官方个人 API 读取你的健康和运动数据（只读）"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "garmin-connect-personal-api-python==1.0.0",   # 佳明官方个人 API
+    "mcp>=2.3,<3",
+    "tzdata",
+    "requests==2.34.2",
+]
+
+[project.scripts]
+garmin-mcp = "garmin_mcp.server:main"          # 本地模式（电脑上的 AI App）
+garmin-mcp-web = "garmin_mcp.web:main"         # 网络模式（手机上的 AI App）
+garmin-mcp-login = "garmin_mcp.login:main"     # 终端登录
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/garmin_mcp"]
+
+[[tool.uv.index]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true

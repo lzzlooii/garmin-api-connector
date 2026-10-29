@@ -1,0 +1,1 @@
+2026-10-28: 20 security unittest cases passed in an isolated Python 3.12 environment. No real Garmin credentials used. Run: python -m unittest discover -s tests -v
