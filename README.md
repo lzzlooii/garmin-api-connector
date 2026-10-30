@@ -10,7 +10,7 @@
 
 已在 WorkBuddy 手机 App 端实测可安装使用。将安装链接或 ZIP 发给 WorkBuddy，告诉它“帮我安装”。让其按以下方式安装：让其从解压目录执行 `uv sync --locked --no-dev --python 3.12`，不要重新从旧仓库安装。项目默认使用清华 PyPI 镜像。
 
-配置 MCP 时，运行解压目录下 `.venv/bin/garmin-mcp`（Windows 为 `.venv/Scripts/garmin-mcp.exe`）。设置 `GARMIN_PERSONAL_API_KEY` 和 `GARMIN_REGION=cn`。密钥优先通过专用配置入口填写，不要发到普通聊天中。需要保存密钥时可执行 `.venv/bin/garmin-mcp-login --region cn`，输入会隐藏。
+配置 MCP 时，运行解压目录下 `.venv/bin/garmin-mcp`（Windows 为 `.venv/Scripts/garmin-mcp.exe`）。设置 `GARMIN_PERSONAL_API_KEY` 和 `GARMIN_REGION=cn`。需要保存密钥时可执行 `.venv/bin/garmin-mcp-login --region cn`，输入会隐藏。
 
 密钥只显示一次，请安全保存。遗失时去佳明设置撤销旧密钥、重新创建并更新。第一次安装仍需准备 Python 3.12 与 uv，下载速度取决于实际运行环境。
 
